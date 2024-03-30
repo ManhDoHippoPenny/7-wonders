@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6777f20e024a16a0faac9e9426d9be, type: 3}
+  m_Name: WaterSymbol
+  m_EditorClassIdentifier: 
+  _effects: []
+  _name: WaterSymbol
+  _sprite: {fileID: -1578250627, guid: 67e61e724d3853848b4b4d6d366bb1ef, type: 3}

@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: 402d589b9bbdc1249a5ce174cf1eaa90
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-Game Board and Conflict pawn-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1654
+        height: 2339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -802, y: 30.5}
+        - {x: -627, y: 278.5}
+        - {x: -90, y: 277.5}
+        - {x: -90, y: 519.5}
+        - {x: -21, y: 586.5}
+        - {x: 736, y: 586.5}
+        - {x: 736, y: 445.5}
+        - {x: 679, y: 474.5}
+        - {x: 678, y: 260.5}
+        - {x: 736, y: 289.5}
+        - {x: 736, y: 57.312134}
+        - {x: 794, y: 85.5}
+        - {x: 793, y: -129.5}
+        - {x: 736, y: -100.5}
+        - {x: 736, y: -204.5}
+        - {x: 652.6516, y: -205.16821}
+        - {x: 632, y: -241.5}
+        - {x: 413, y: -241.5}
+        - {x: 413, y: -217.5}
+        - {x: 368, y: -192.5}
+        - {x: 323, y: -217.5}
+        - {x: 323, y: -233.5}
+        - {x: -34, y: -233.5}
+        - {x: -35, y: -206.5}
+        - {x: -80, y: -181.5}
+        - {x: -125, y: -206.5}
+        - {x: -125, y: -221.5}
+        - {x: -484, y: -221.5}
+        - {x: -485, y: -195.5}
+        - {x: -529, y: -170.5}
+        - {x: -575, y: -196.5}
+        - {x: -575, y: -210.5}
+        - {x: -634, y: -208.5}
+      - - {x: 633, y: -1063.5}
+        - {x: 573, y: -1063.5}
+        - {x: 573, y: -1050.5}
+        - {x: 528, y: -1024.5}
+        - {x: 483, y: -1050.5}
+        - {x: 483, y: -1076.5}
+        - {x: 125, y: -1076.5}
+        - {x: 124, y: -1061.5}
+        - {x: 79, y: -1036.5}
+        - {x: 34, y: -1061.5}
+        - {x: 33, y: -1087.5}
+        - {x: -324, y: -1088.5}
+        - {x: -324, y: -1072.5}
+        - {x: -370, y: -1047.5}
+        - {x: -415, y: -1072.5}
+        - {x: -415, y: -1095.5}
+        - {x: -634, y: -1095.5}
+        - {x: -655, y: -1058.5}
+        - {x: -737, y: -1058.5}
+        - {x: -737, y: -954.5}
+        - {x: -680, y: -982.5}
+        - {x: -680, y: -770.5}
+        - {x: -737, y: -798.5}
+        - {x: -737, y: -566.5}
+        - {x: -794, y: -594.5}
+        - {x: -794, y: -379.5}
+        - {x: -737, y: -408.5}
+        - {x: -737, y: -267.5}
+        - {x: 19, y: -268.5}
+        - {x: 89, y: -334.5}
+        - {x: 89, y: -575.5}
+        - {x: 625, y: -575.5}
+        - {x: 799, y: -824.5}
+      physicsShape:
+      - - {x: 413, y: -241.5}
+        - {x: 414, y: -218.5}
+        - {x: 369, y: -192.5}
+        - {x: 322, y: -217.5}
+        - {x: 324, y: -233.5}
+        - {x: -36, y: -233.5}
+        - {x: -36, y: -206.5}
+        - {x: -80, y: -181.5}
+        - {x: -126, y: -207.5}
+        - {x: -125, y: -222.5}
+        - {x: -484, y: -221.5}
+        - {x: -483, y: -195.5}
+        - {x: -529, y: -170.5}
+        - {x: -574, y: -196.5}
+        - {x: -575, y: -208.5}
+        - {x: -634, y: -209.5}
+        - {x: -801, y: 29.5}
+        - {x: -627, y: 278.5}
+        - {x: -90, y: 279.5}
+        - {x: -91, y: 515.5}
+        - {x: -22, y: 587.5}
+        - {x: 736, y: 586.5}
+        - {x: 735, y: 445.5}
+        - {x: 679, y: 473.5}
+        - {x: 679, y: 260.5}
+        - {x: 737, y: 288.5}
+        - {x: 736, y: 56.5}
+        - {x: 793, y: 85.5}
+        - {x: 794, y: -131.5}
+        - {x: 736, y: -101.5}
+        - {x: 737, y: -204.5}
+        - {x: 653, y: -204.5}
+        - {x: 633, y: -240.5}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0eb4c5a2db3bdec4bbe8a87d5d2122a2
+      internalID: 1522468559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      7-Wonders-Duel-Game Board and Conflict pawn-1_0: 1522468559
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

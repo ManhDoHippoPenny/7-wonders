@@ -1,0 +1,505 @@
+fileFormatVersion: 2
+guid: 406f8c19c581c254a8195b6dcc6607fa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1603.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833b0d7c7a42fd64d89e9d6d57631f04
+      internalID: 1988502803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1603.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba6e1ca38a8e37408a11366957dea56
+      internalID: -294860463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1603.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d938ad37a9f39d64da1813e6442e88b6
+      internalID: -1817139738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1603.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266bf45056aedf5489dd4619fcf86efa
+      internalID: -985171264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1069.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc15a3918c02c449887681882bc7fc9
+      internalID: -200349753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1069.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594992120ffbd934f8cb8e6785ef2eb9
+      internalID: -1725923934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_6
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1069.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900d61bd592484e4bbe16d4ea68b87b4
+      internalID: 26774133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_7
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1069.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18997f40d2e63374cb0933e0b380a92d
+      internalID: -1919141033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 535.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bb1153fb2c6494699d607fd54ae973
+      internalID: 853309638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 535.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf55d74867f834e4ea00716e62e7e6cc
+      internalID: 1059721337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 535.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4727c6627b62143997c8c4161f4b10
+      internalID: -2021250983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_11
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 535.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ca673a3b47b4c46acb6ec8e5dd7ece
+      internalID: 1551915169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5776c8d4149e25a4fbce0f6596fdd1ac
+      internalID: 1600919402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_13
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdc0d07e83bebe469e298d8c37ab143
+      internalID: -1698373327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_14
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63c7cde87bd7d44480f966b12516dc1
+      internalID: -205504060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7-Wonders-Duel-ENG-03_15
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1.5
+        width: 352.5
+        height: 534.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26a22844459f8748b8d25202e623940
+      internalID: -1346390404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      7-Wonders-Duel-ENG-03_0: 1988502803
+      7-Wonders-Duel-ENG-03_1: -294860463
+      7-Wonders-Duel-ENG-03_10: -2021250983
+      7-Wonders-Duel-ENG-03_11: 1551915169
+      7-Wonders-Duel-ENG-03_12: 1600919402
+      7-Wonders-Duel-ENG-03_13: -1698373327
+      7-Wonders-Duel-ENG-03_14: -205504060
+      7-Wonders-Duel-ENG-03_15: -1346390404
+      7-Wonders-Duel-ENG-03_2: -1817139738
+      7-Wonders-Duel-ENG-03_3: -985171264
+      7-Wonders-Duel-ENG-03_4: -200349753
+      7-Wonders-Duel-ENG-03_5: -1725923934
+      7-Wonders-Duel-ENG-03_6: 26774133
+      7-Wonders-Duel-ENG-03_7: -1919141033
+      7-Wonders-Duel-ENG-03_8: 853309638
+      7-Wonders-Duel-ENG-03_9: 1059721337
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179c140513cf417893ddbd2bdba46b19, type: 3}
+  m_Name: StonePit
+  m_EditorClassIdentifier: 
+  _name: StonePit
+  _age: 1
+  _type: 4
+  _sprite: {fileID: 1988502803, guid: 406f8c19c581c254a8195b6dcc6607fa, type: 3}
+  _prize:
+  - _type: 1
+    _quantity: 1
+    _link: {fileID: 11400000, guid: 45b2033b9a63da048a3111f0ccfb26b5, type: 2}
+  _cost:
+  - _type: 3
+    _quantity: 0
+    _link: {fileID: 11400000, guid: f96d4bdbd57e5ee4bac0663a810e9893, type: 2}

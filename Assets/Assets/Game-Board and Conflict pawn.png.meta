@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: ecae02d1bcee03f4ab9b8b25ab128cbf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game-Board and Conflict pawn_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 63
+        width: 1604
+        height: 863
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92bd9b78bbb0dd409b0a9f96e47c473
+      internalID: 323965931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game-Board and Conflict pawn_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 926
+        width: 1617
+        height: 887
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 807.5, y: 401.5}
+        - {x: -74.23685, y: 409.7754}
+        - {x: -106.22027, y: 329.8291}
+        - {x: -109.5, y: 99.5}
+        - {x: -652.5, y: 96.5}
+        - {x: -808.5, y: -168.5}
+        - {x: -807.5711, y: -237.78952}
+        - {x: -696.77136, y: -443.3657}
+        - {x: 806.5, y: -443.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ad73e241c132a4487c71c372c02810
+      internalID: 1160583766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game-Board and Conflict pawn_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1934
+        width: 247
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c016420bcdc994585d670d9152b63f
+      internalID: 832726362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -775.598, y: -223.84961}
+      - {x: -801.8701, y: -261.53857}
+      - {x: -801.8701, y: -1058.7173}
+      - {x: -775.598, y: -1104.4009}
+      - {x: 627.1036, y: -1104.4009}
+      - {x: 672.7942, y: -1097.5483}
+      - {x: 806.4392, y: -987.9077}
+      - {x: 806.4392, y: -569.90283}
+      - {x: 355.24448, y: -223.84961}
+    - - {x: -100.51933, y: -247.8335}
+      - {x: -100.51933, y: -253.54395}
+      - {x: -98.2348, y: -255.82812}
+      - {x: -77.674034, y: -255.82812}
+      - {x: -75.3895, y: -253.54395}
+      - {x: -75.3895, y: -251.25977}
+      - {x: -76.53177, y: -247.8335}
+    - - {x: 774.45575, y: 94.79346}
+      - {x: 744.7569, y: 308.36426}
+      - {x: 801.8701, y: 320.92725}
+      - {x: 801.8701, y: 689.82227}
+      - {x: 398.65054, y: 1092.98}
+      - {x: -678.5055, y: 1092.98}
+      - {x: -699.0663, y: 1066.7119}
+      - {x: -806.4392, y: 374.60547}
+      - {x: -806.4392, y: -68.52539}
+      - {x: -668.2251, y: -247.8335}
+      - {x: 727.6229, y: -247.8335}
+      - {x: 801.8701, y: -191.8711}
+      - {x: 801.8701, y: 99.36182}
+      - {x: 791.5898, y: 98.21973}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game-Board and Conflict pawn_0: 323965931
+      Game-Board and Conflict pawn_1: 1160583766
+      Game-Board and Conflict pawn_2: 832726362
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

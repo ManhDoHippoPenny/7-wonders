@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179c140513cf417893ddbd2bdba46b19, type: 3}
+  m_Name: Scriptorium
+  m_EditorClassIdentifier: 
+  _name: Scriptorium
+  _age: 0
+  _type: 2
+  _sprite: {fileID: 1344198272, guid: 0e3ddd85ba3992c4da7a835915ea87b6, type: 3}
+  _prize:
+  - _type: 4
+    _quantity: 1
+    _link: {fileID: 11400000, guid: d570c734e62a26c4781ade9576703abd, type: 2}
+  - _type: 4
+    _quantity: 1
+    _link: {fileID: 11400000, guid: 4a08f94edc31b20479f0f01ca8f3d635, type: 2}
+  _cost:
+  - _type: 3
+    _quantity: 2
+    _link: {fileID: 11400000, guid: f96d4bdbd57e5ee4bac0663a810e9893, type: 2}
