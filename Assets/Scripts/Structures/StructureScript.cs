@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DefaultNamespace.Structures
 {
@@ -28,7 +29,13 @@ namespace DefaultNamespace.Structures
         [SerializeField] private StructureProfile _profile;
         [SerializeField] private StatusCard _status;
         [SerializeField] private SpriteRenderer _renderer;
-
+        
+        private BoxCollider2D _collider2D;
+        private Collider2D[] results;
+        private Vector3 extent;
+        
+        public UnityAction OnClickEvent;
+        
         #region Properties
 
         public StatusCard Status
@@ -43,11 +50,34 @@ namespace DefaultNamespace.Structures
             }
         }
 
+        public int Order
+        {
+            get
+            {
+                return _renderer.sortingOrder;
+            }
+            private set
+            {
+                _renderer.sortingOrder = value;
+            }
+        }
+
         #endregion
 
         private void Awake()
         {
             _renderer = GetComponent<SpriteRenderer>();
+            _collider2D = GetComponent<BoxCollider2D>();
+        }
+
+        private void OnEnable()
+        {
+            OnClickEvent += TryToPurchaseEvent;
+        }
+
+        private void OnDisable()
+        {
+            OnClickEvent -= TryToPurchaseEvent;
         }
 
         public void SetProfile(StructureProfile profile)
@@ -92,6 +122,25 @@ namespace DefaultNamespace.Structures
             }
             else _renderer.sprite = _profile._sprite;
             _renderer.sortingOrder = renderOrder;
+            extent = _collider2D.bounds.extents;
+        }
+
+        public void TryToPurchaseEvent()
+        {
+            if (_renderer.sortingOrder != 0) return;
+            Debug.Log("Purchased " + name);
+            gameObject.SetActive(false);
+            GameController.Instance.RemoveStructureList();
+        }
+
+        public BoxCollider2D GetCollider()
+        {
+            return _collider2D;
+        }
+        
+        private (Vector2, Vector2) GetAreaFromBoxCollider(BoxCollider2D boxCollider2D)
+        {
+            return (boxCollider2D.bounds.min, boxCollider2D.bounds.max);
         }
     }
 }

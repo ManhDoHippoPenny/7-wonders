@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace.Structures;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,8 +14,8 @@ namespace DefaultNamespace
     {
         #region CONSTANT
 
-        private const float SpaceColumnStructure = 0.5f;
-        private const float SpaceRowStructure = 0.5f;
+        private const float SpaceColumnStructure = 0.65f;
+        private const float SpaceRowStructure = 0.85f;
         private static readonly int[,] StructureAge1 = { { 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1 }, {  0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0 }, { 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0 },{  0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0 },{ 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0 } };
         public Sprite Age1Back;
         public Sprite Age2Back;
@@ -26,10 +29,13 @@ namespace DefaultNamespace
 
         private PlayerProfile _player1;
         private PlayerProfile _player2;
+        private List<StructureScript> _cards = new List<StructureScript>();
         private List<StructureProfile> _age1;
         private StructureProfile[] _age2;
         private StructureProfile[] _age3;
         [SerializeField] private GameObject _holder;
+        [SerializeField] private float _offsetX;
+        [SerializeField] private float _offsetY;
 
         #region Public Variant
 
@@ -103,6 +109,7 @@ namespace DefaultNamespace
                         card.transform.localPosition = new Vector3(j * SpaceColumnStructure, i * SpaceRowStructure, 0);
                         card.SetProfile(list[random]);
                         card.SetStatus(StatusCard.Faceup, -i);
+                        _cards.Add(card);
                         list.RemoveAt(random);
                     } else if (structure[i,j] == -1)
                     {
@@ -111,10 +118,30 @@ namespace DefaultNamespace
                         card.transform.localPosition = new Vector3(j * SpaceColumnStructure, i * SpaceRowStructure, 0);
                         card.SetProfile(list[random]);
                         card.SetStatus(StatusCard.Facedown,-i);   
+                        _cards.Add(card);
                         list.RemoveAt(random);
                     }
                 }
             }
         }
+
+        public void RemoveStructureList()
+        {
+            Collider2D[] colliders = new Collider2D[24];
+            foreach (var card in _cards)
+            {
+                int n = Physics2D.OverlapAreaNonAlloc(card.GetCollider().bounds.min,
+                    card.GetCollider().bounds.max, colliders);
+                bool flag = true;
+                for (int i=0; i<n;i++ )
+                {
+                    var collider = colliders[i];
+                    if (collider.gameObject.GetComponent<StructureScript>().Order > card.Order) flag = false;
+                }
+                if(flag) card.SetStatus(StatusCard.Faceup,0);
+                
+            }
+        }
+        
     }
 }

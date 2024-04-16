@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Baths
   m_EditorClassIdentifier: 
   _name: Baths
-  _age: 0
+  _age: 1
   _type: 1
   _sprite: {fileID: 416758993, guid: 0e3ddd85ba3992c4da7a835915ea87b6, type: 3}
   _prize:

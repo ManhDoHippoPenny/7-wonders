@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GlassWork
   m_EditorClassIdentifier: 
   _name: GlassWork
-  _age: 0
+  _age: 1
   _type: 5
   _sprite: {fileID: 26774133, guid: 406f8c19c581c254a8195b6dcc6607fa, type: 3}
   _prize:
