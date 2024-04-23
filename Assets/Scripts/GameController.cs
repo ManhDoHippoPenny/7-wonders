@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace.Structures;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -29,6 +26,7 @@ namespace DefaultNamespace
 
         private PlayerProfile _player1;
         private PlayerProfile _player2;
+        private bool _turnFirstPlayer = true;
         private List<StructureScript> _cards = new List<StructureScript>();
         private List<StructureProfile> _age1;
         private StructureProfile[] _age2;
@@ -86,6 +84,9 @@ namespace DefaultNamespace
             _age2 = Resources.LoadAll<StructureProfile>(pathToStructureProfileAge2);
             _age3 = Resources.LoadAll<StructureProfile>(pathToStructureProfileAge3);
 
+            _player1 = new PlayerProfile();
+            _player2 = new PlayerProfile();
+            
             LoadAge1();
         }
 
@@ -139,9 +140,48 @@ namespace DefaultNamespace
                     if (collider.gameObject.GetComponent<StructureScript>().Order > card.Order) flag = false;
                 }
                 if(flag) card.SetStatus(StatusCard.Faceup,0);
-                
             }
         }
-        
+
+        public ResourceType CheckSpendGood(StructureProfile profile)
+        {
+            ResourceType result = ResourceType.None;
+            foreach (var resource in profile._cost)
+            {
+                if ((_turnFirstPlayer && _player1.CheckResource(resource.GetGoodType(), resource.GetQuantity())) ||
+                    (!_turnFirstPlayer && _player2.CheckResource(resource.GetGoodType(), resource.GetQuantity())))
+                    continue;
+                result = resource.GetGoodType();
+                break;
+            }
+            return result;
+        }
+
+        public void BuyStructure(StructureProfile profile)
+        {
+            foreach (var resource in profile._cost)
+            {
+                if (resource.GetGoodType() == ResourceType.Gold)
+                {
+                    if (_turnFirstPlayer) _player1.UpdateResource(resource.GetGoodType(), -resource.GetQuantity());
+                    else _player2.UpdateResource(resource.GetGoodType(), -resource.GetQuantity());
+                }
+            }
+        }
+
+        public void ReceiveGood(params (ResourceType type, int quantity)[] resources)
+        {
+            foreach (var resource in resources)
+            {
+                if (_turnFirstPlayer) _player1.UpdateResource(resource.type, resource.quantity);
+                else _player2.UpdateResource(resource.type, resource.quantity);
+            }
+        }
+
+        public void ReceiveGood(StructureProfile profile)
+        {
+            var tuple = profile._prize.Select(good => (good.GetGoodType(), good.GetQuantity()));
+            ReceiveGood(tuple.ToArray());
+        }
     }
 }

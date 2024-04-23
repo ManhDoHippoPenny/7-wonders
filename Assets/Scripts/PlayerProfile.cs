@@ -1,34 +1,52 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using DefaultNamespace.Structures;
+using Sirenix.OdinInspector;
 
 namespace DefaultNamespace
 {
-    public class PlayerProfile
+    [Serializable]
+    public struct PlayerProfile
     {
-        private List<StructureProfile> _builtBuildings = new List<StructureProfile>();
-        private int _money;
-        private Dictionary<string,int> _resources = new Dictionary<string, int>();
+        private List<StructureProfile> _builtBuildings;
+        private Dictionary<ResourceType, int> _resources;
 
-        public void BuildBuilding(StructureProfile profile)
+        public Dictionary<ResourceType, int> Resources
+        {
+            get => _resources;
+            set => _resources = value;
+        }
+
+        public PlayerProfile(int gold)
+        {
+            _resources = new Dictionary<ResourceType, int> { { ResourceType.Gold, gold } };
+            _builtBuildings = new List<StructureProfile>();
+        }
+
+        public void BuildStruct(StructureProfile profile)
         {
             _builtBuildings.Add(profile);
-            foreach (var good in profile._prize)
+        }
+        
+        public bool UpdateResource(ResourceType resourceType, int quantity)
+        {
+            if (!_resources.ContainsKey(resourceType))
             {
-                ObtainGood(good);
+                if (quantity >= 0) _resources.Add(resourceType, quantity);
+                else return false;
             }
+            else
+            {
+                if (_resources[resourceType] + quantity >= 0) _resources[resourceType] += quantity;
+                else return false;
+            }
+            return true;
         }
 
-        public void ObtainGood(Good good)
+        public bool CheckResource(ResourceType resourceType, int quantity)
         {
-            if (!_resources.ContainsKey(good.ToString())) _resources[good.ToString()] = 0;
-            _resources[good.ToString()] += good.GetQuantity();
-        }
-
-        public bool SpendGood(Good good)
-        {
-            if (!_resources.ContainsKey(good.ToString())) return false;
-            if (_resources[good.ToString()] < good.GetQuantity()) return false;
-            _resources[good.ToString()] -= good.GetQuantity();
+            if (!_resources.ContainsKey(resourceType)) return false;
+            if (_resources[resourceType] < quantity) return false;
             return true;
         }
     }

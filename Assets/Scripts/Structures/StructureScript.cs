@@ -22,6 +22,9 @@ namespace DefaultNamespace.Structures
         Glass= 6,
         Conflict = 5,
         VictoryPoint = 8,
+        None = -1
+        
+         
     }
     
     public class StructureScript : MonoBehaviour
@@ -127,8 +130,15 @@ namespace DefaultNamespace.Structures
 
         public void TryToPurchaseEvent()
         {
+            var type = GameController.Instance.CheckSpendGood(_profile);
+            if (type != ResourceType.None)
+            {
+                Debug.Log(type);
+                return;
+            }
+            GameController.Instance.BuyStructure(_profile);
+            GameController.Instance.ReceiveGood(_profile);
             if (_renderer.sortingOrder != 0) return;
-            Debug.Log("Purchased " + name);
             gameObject.SetActive(false);
             GameController.Instance.RemoveStructureList();
         }
