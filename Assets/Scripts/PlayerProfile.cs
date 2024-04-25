@@ -1,34 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using DefaultNamespace.Structures;
 using Sirenix.OdinInspector;
 
 namespace DefaultNamespace
 {
     [Serializable]
-    public struct PlayerProfile
+    public class PlayerProfile
     {
         private List<StructureProfile> _builtBuildings;
         private Dictionary<ResourceType, int> _resources;
-
         public Dictionary<ResourceType, int> Resources
         {
             get => _resources;
             set => _resources = value;
         }
-
-        public PlayerProfile(int gold)
+        
+        public PlayerProfile()
         {
-            _resources = new Dictionary<ResourceType, int> { { ResourceType.Gold, gold } };
+            _resources = new Dictionary<ResourceType, int> { { ResourceType.Gold, 7 } };
             _builtBuildings = new List<StructureProfile>();
         }
-
-        public void BuildStruct(StructureProfile profile)
-        {
-            _builtBuildings.Add(profile);
-        }
         
-        public bool UpdateResource(ResourceType resourceType, int quantity)
+        private bool UpdateResource(ResourceType resourceType, int quantity)
         {
             if (!_resources.ContainsKey(resourceType))
             {
@@ -48,6 +43,27 @@ namespace DefaultNamespace
             if (!_resources.ContainsKey(resourceType)) return false;
             if (_resources[resourceType] < quantity) return false;
             return true;
+        }
+
+        public void BuyStructure(StructureProfile structureProfile)
+        {
+            foreach (var good in structureProfile._cost)
+            {
+                if (good.GetGoodType() == ResourceType.Gold)
+                {
+                    UpdateResource(good.GetGoodType(), -good.GetQuantity());
+                }
+            }
+            _builtBuildings.Add(structureProfile);
+            foreach (var good in structureProfile._prize)
+            {
+                UpdateResource(good.GetGoodType(), good.GetQuantity());
+            }
+        }
+
+        public void DiscardStructure(StructureProfile profile)
+        {
+            UpdateResource(ResourceType.Gold, 2 + _builtBuildings.Count(builder => builder._type == StructureType.MARKET));
         }
     }
 }

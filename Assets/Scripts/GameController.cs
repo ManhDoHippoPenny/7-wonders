@@ -154,34 +154,27 @@ namespace DefaultNamespace
                 result = resource.GetGoodType();
                 break;
             }
+            if(result != ResourceType.None) Debug.Log($"{(_turnFirstPlayer? "First player": "Second player")} need more {result.ToString()}");
             return result;
         }
 
         public void BuyStructure(StructureProfile profile)
         {
-            foreach (var resource in profile._cost)
-            {
-                if (resource.GetGoodType() == ResourceType.Gold)
-                {
-                    if (_turnFirstPlayer) _player1.UpdateResource(resource.GetGoodType(), -resource.GetQuantity());
-                    else _player2.UpdateResource(resource.GetGoodType(), -resource.GetQuantity());
-                }
-            }
+            if (_turnFirstPlayer) _player1.BuyStructure(profile);
+            else _player2.BuyStructure(profile);
+            EndTurn();
         }
 
-        public void ReceiveGood(params (ResourceType type, int quantity)[] resources)
+        public void DiscardStructure(StructureProfile profile)
         {
-            foreach (var resource in resources)
-            {
-                if (_turnFirstPlayer) _player1.UpdateResource(resource.type, resource.quantity);
-                else _player2.UpdateResource(resource.type, resource.quantity);
-            }
+            if(_turnFirstPlayer) _player1.DiscardStructure(profile);
+            else _player2.DiscardStructure(profile);
+            EndTurn();
         }
 
-        public void ReceiveGood(StructureProfile profile)
+        public void EndTurn()
         {
-            var tuple = profile._prize.Select(good => (good.GetGoodType(), good.GetQuantity()));
-            ReceiveGood(tuple.ToArray());
+            _turnFirstPlayer = !_turnFirstPlayer;
         }
     }
 }

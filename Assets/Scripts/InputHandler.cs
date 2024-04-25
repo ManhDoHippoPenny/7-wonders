@@ -8,6 +8,7 @@ namespace DefaultNamespace
     public class InputHandler : MonoBehaviour
     {
         private Camera _mainCamera;
+        private StructureScript _currentStructureScript;
 
         private void Awake()
         {
@@ -19,9 +20,10 @@ namespace DefaultNamespace
             if (!context.started) return;
 
             var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
+            if(_currentStructureScript != null) _currentStructureScript.MissClickEvent.Invoke();
             if (!rayHit.collider || !rayHit.collider.gameObject.GetComponent<StructureScript>()) return;
-            
-            rayHit.collider.gameObject.GetComponent<StructureScript>().OnClickEvent.Invoke();
+            _currentStructureScript = rayHit.collider.gameObject.GetComponent<StructureScript>();
+            _currentStructureScript.OnClickEvent.Invoke();
         }
     }
 }

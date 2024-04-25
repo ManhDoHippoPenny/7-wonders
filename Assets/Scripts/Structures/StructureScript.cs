@@ -1,4 +1,5 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -35,9 +36,11 @@ namespace DefaultNamespace.Structures
         
         private BoxCollider2D _collider2D;
         private Collider2D[] results;
-        private Vector3 extent;
+        [ShowInInspector]
+        private Canvas _buttons;
         
         public UnityAction OnClickEvent;
+        public UnityAction MissClickEvent;
         
         #region Properties
 
@@ -71,16 +74,38 @@ namespace DefaultNamespace.Structures
         {
             _renderer = GetComponent<SpriteRenderer>();
             _collider2D = GetComponent<BoxCollider2D>();
+            _buttons = GetComponentInChildren<Canvas>();
+            _buttons.worldCamera = Camera.main;
+            _buttons.gameObject.SetActive(false);
+        }
+
+        private void Start()
+        {
+            
         }
 
         private void OnEnable()
         {
-            OnClickEvent += TryToPurchaseEvent;
+            OnClickEvent += () =>
+            {
+                _buttons.gameObject.SetActive(true);
+            };
+            MissClickEvent += () =>
+            {
+                _buttons.gameObject.SetActive(false);
+            };
         }
 
         private void OnDisable()
         {
-            OnClickEvent -= TryToPurchaseEvent;
+            OnClickEvent -= () =>
+            {
+                if(_status == StatusCard.Faceup && _renderer.sortingOrder == 0) _buttons.gameObject.SetActive(true);
+            };;
+            MissClickEvent -= () =>
+            {
+                _buttons.gameObject.SetActive(false);
+            };
         }
 
         public void SetProfile(StructureProfile profile)
@@ -125,20 +150,27 @@ namespace DefaultNamespace.Structures
             }
             else _renderer.sprite = _profile._sprite;
             _renderer.sortingOrder = renderOrder;
-            extent = _collider2D.bounds.extents;
         }
 
         public void TryToPurchaseEvent()
         {
+            if (_renderer.sortingOrder != 0) return;
             var type = GameController.Instance.CheckSpendGood(_profile);
             if (type != ResourceType.None)
             {
-                Debug.Log(type);
                 return;
             }
             GameController.Instance.BuyStructure(_profile);
-            GameController.Instance.ReceiveGood(_profile);
+            _buttons.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+            GameController.Instance.RemoveStructureList();
+        }
+
+        public void DiscardStructure()
+        {
+            GameController.Instance.DiscardStructure(_profile);
             if (_renderer.sortingOrder != 0) return;
+            _buttons.gameObject.SetActive(false);
             gameObject.SetActive(false);
             GameController.Instance.RemoveStructureList();
         }
