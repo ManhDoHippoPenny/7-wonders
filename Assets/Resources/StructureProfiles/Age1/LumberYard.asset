@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179c140513cf417893ddbd2bdba46b19, type: 3}
   m_Name: LumberYard
   m_EditorClassIdentifier: 
-  _name: 
+  _name: LumberYard
   _age: 1
   _type: 4
   _sprite: {fileID: -1725098388, guid: 0e3ddd85ba3992c4da7a835915ea87b6, type: 3}
   _prize:
   - _type: 2
     _quantity: 1
-    _link: {fileID: 11400000, guid: 08325a84492f94a4aaaeaa2fc9ae73a2, type: 2}
+    _link: {fileID: 11400000, guid: 47ee8091caceb2345bf22dad69151e53, type: 2}
   _cost: []

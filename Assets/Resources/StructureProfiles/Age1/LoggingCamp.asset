@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179c140513cf417893ddbd2bdba46b19, type: 3}
   m_Name: LoggingCamp
   m_EditorClassIdentifier: 
-  _name: 
+  _name: LoggingCamp
   _age: 1
   _type: 4
   _sprite: {fileID: -200349753, guid: 406f8c19c581c254a8195b6dcc6607fa, type: 3}
   _prize:
   - _type: 2
     _quantity: 1
-    _link: {fileID: 11400000, guid: 08325a84492f94a4aaaeaa2fc9ae73a2, type: 2}
+    _link: {fileID: 11400000, guid: 47ee8091caceb2345bf22dad69151e53, type: 2}
   _cost:
   - _type: 3
     _quantity: 1
-    _link: {fileID: 11400000, guid: f96d4bdbd57e5ee4bac0663a810e9893, type: 2}
+    _link: {fileID: 11400000, guid: 47ee8091caceb2345bf22dad69151e53, type: 2}

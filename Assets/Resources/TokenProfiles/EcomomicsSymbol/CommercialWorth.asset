@@ -15,3 +15,4 @@ MonoBehaviour:
   _effects: []
   _name: CommercialWorth
   _sprite: {fileID: 335913731, guid: 5fb0cfcb4a4af8b4ea30d6966cdd1963, type: 3}
+  _type: 4

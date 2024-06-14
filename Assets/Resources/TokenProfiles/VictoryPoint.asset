@@ -15,3 +15,4 @@ MonoBehaviour:
   _effects: []
   _name: VictoryPoint
   _sprite: {fileID: 1796174393, guid: 1b23c856f743b374f9834a6c36a95807, type: 3}
+  _type: 8

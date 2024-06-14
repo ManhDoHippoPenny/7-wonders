@@ -15,3 +15,4 @@ MonoBehaviour:
   _effects: []
   _name: Papyrus
   _sprite: {fileID: -2045376998, guid: 66dd2276b5ceb0141ade42730e080d7a, type: 3}
+  _type: 7

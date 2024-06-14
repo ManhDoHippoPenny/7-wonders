@@ -15,3 +15,4 @@ MonoBehaviour:
   _effects: []
   _name: WaterSymbol
   _sprite: {fileID: -1578250627, guid: 67e61e724d3853848b4b4d6d366bb1ef, type: 3}
+  _type: 4

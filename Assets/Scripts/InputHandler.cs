@@ -20,8 +20,8 @@ namespace DefaultNamespace
             if (!context.started) return;
 
             var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
-            if(_currentStructureScript != null) _currentStructureScript.MissClickEvent.Invoke();
-            if (!rayHit.collider || !rayHit.collider.gameObject.GetComponent<StructureScript>()) return;
+            if(_currentStructureScript != null) _currentStructureScript.MissClickEvent?.Invoke();
+            if (!rayHit.collider || !rayHit.collider.gameObject.GetComponent<StructureScript>() || rayHit.collider.gameObject.GetComponent<SpriteRenderer>().sortingOrder != 0) return;
             _currentStructureScript = rayHit.collider.gameObject.GetComponent<StructureScript>();
             _currentStructureScript.OnClickEvent.Invoke();
         }

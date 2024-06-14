@@ -26,6 +26,11 @@ namespace DefaultNamespace
             _quantity = 1;
         }
 
+        public TokenProfile GetLink()
+        {
+            return _link;
+        }
+
         public ResourceType GetGoodType()
         {
             return _type;

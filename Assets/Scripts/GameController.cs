@@ -160,6 +160,12 @@ namespace DefaultNamespace
 
         public void BuyStructure(StructureProfile profile)
         {
+            var type = Instance.CheckSpendGood(profile);
+            if (type != ResourceType.None)
+            {
+                UiHandler.Instance.ErrorAppearEvent?.Invoke(type.ToString());
+                return;
+            }
             if (_turnFirstPlayer) _player1.BuyStructure(profile);
             else _player2.BuyStructure(profile);
             EndTurn();

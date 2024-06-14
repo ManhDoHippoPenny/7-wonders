@@ -15,3 +15,4 @@ MonoBehaviour:
   _effects: []
   _name: 3Gold
   _sprite: {fileID: -1864755525, guid: 5075ece2dc78f5847af5da5feb427962, type: 3}
+  _type: 3

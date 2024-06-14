@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DefaultNamespace.Structures;
 using UnityEngine;
 
 namespace DefaultNamespace.Values
@@ -20,6 +21,7 @@ namespace DefaultNamespace.Values
         public List<Effect> _effects;
         public string _name;
         public Sprite _sprite;
+        public Good _type;
 
         private void OnValidate()
         {

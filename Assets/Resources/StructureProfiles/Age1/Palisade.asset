@@ -19,11 +19,11 @@ MonoBehaviour:
   _prize:
   - _type: 5
     _quantity: 1
-    _link: {fileID: 11400000, guid: 9de2b204b1c6df64189e3696b42b7e85, type: 2}
+    _link: {fileID: 11400000, guid: 47ee8091caceb2345bf22dad69151e53, type: 2}
   - _type: 4
     _quantity: 1
     _link: {fileID: 11400000, guid: 70ef71c08c5bc674e8eca4b0007b7654, type: 2}
   _cost:
   - _type: 3
     _quantity: 2
-    _link: {fileID: 11400000, guid: f96d4bdbd57e5ee4bac0663a810e9893, type: 2}
+    _link: {fileID: 11400000, guid: 47ee8091caceb2345bf22dad69151e53, type: 2}

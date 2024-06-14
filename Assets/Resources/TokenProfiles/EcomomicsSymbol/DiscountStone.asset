@@ -15,3 +15,4 @@ MonoBehaviour:
   _effects: []
   _name: DiscountStone
   _sprite: {fileID: -1993600300, guid: 4419e6800cbe95c4d9d69a3999256be6, type: 3}
+  _type: 4

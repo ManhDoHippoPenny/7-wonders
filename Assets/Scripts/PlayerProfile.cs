@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace.Structures;
-using Sirenix.OdinInspector;
 
 namespace DefaultNamespace
 {

@@ -15,3 +15,4 @@ MonoBehaviour:
   _effects: []
   _name: Glass
   _sprite: {fileID: -1837758043, guid: 66dd2276b5ceb0141ade42730e080d7a, type: 3}
+  _type: 6

@@ -39,53 +39,13 @@ namespace DefaultNamespace
                 // Draw fields - pass GUIContent.none to each so they are drawn without labels
                 EditorGUI.PropertyField(amountRect, _type, new GUIContent("Type"));
                 EditorGUI.PropertyField(unitRect, _amount, new GUIContent("Quantity"));
-                switch (_type.intValue)
+                if (_type.intValue != 4)
                 {
-                    case (0):
-                    {
-                        _link.boxedValue = AssetManager.Instance.ClayToken;
-                        break;
-                    }
-                    case (1):
-                    {
-                        _link.boxedValue = AssetManager.Instance.StoneToken;
-                        break;
-                    }
-                    case 2:
-                    {
-                        _link.boxedValue = AssetManager.Instance.WoodToken;
-                        break;
-                    }
-                    case 6:
-                    {
-                        _link.boxedValue = AssetManager.Instance.GlassToken;
-                        break;
-                    }
-                    case 7:
-                    {
-                        _link.boxedValue = AssetManager.Instance.PapyrusToken;
-                        break;
-                    }
-                    case 5:
-                    {
-                        _link.boxedValue = AssetManager.Instance.ConflictToken;
-                        break;
-                    }
-                    case 8:
-                    {
-                        _link.boxedValue = AssetManager.Instance.VPToken;
-                        break;
-                    }
-                    case 3:
-                    {
-                        _link.boxedValue = AssetManager.Instance.GoldToken1;
-                        break;
-                    }
-                    case 4:
-                    {
-                        _amount.intValue = 1;
-                        break;
-                    }
+                    _link.boxedValue = AssetManager.Instance.SearchResource(_type.intValue);
+                }
+                else
+                {
+                    _amount.intValue = 1;
                 }
                 EditorGUI.PropertyField(linkRect, property.FindPropertyRelative("_link"), new GUIContent("Link"));
                 

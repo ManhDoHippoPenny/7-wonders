@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DiscountClay
   m_EditorClassIdentifier: 
   _effects: []
-  _name: 
+  _name: DiscountClay
   _sprite: {fileID: 0}
+  _type: 4
