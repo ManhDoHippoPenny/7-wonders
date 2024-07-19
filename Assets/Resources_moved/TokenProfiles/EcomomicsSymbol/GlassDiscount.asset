@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6777f20e024a16a0faac9e9426d9be, type: 3}
+  m_Name: GlassDiscount
+  m_EditorClassIdentifier: 
+  _effects: []
+  _name: GlassDiscount
+  _sprite: {fileID: -1669482067, guid: 4419e6800cbe95c4d9d69a3999256be6, type: 3}
+  _type:
+    _type: 0
+    _quantity: 0
+    _link: {fileID: 11400000, guid: 47ee8091caceb2345bf22dad69151e53, type: 2}

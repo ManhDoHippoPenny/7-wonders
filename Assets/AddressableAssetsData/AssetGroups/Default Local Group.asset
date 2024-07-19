@@ -1,0 +1,465 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bade3c67885744146ac08e6e3308d8b3
+  m_SerializeEntries:
+  - m_GUID: cdaf87d6cae3c914cae56808ce5ca5bb
+    m_Address: Assets/Prefabs/AssetManager.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df3a6b166ea410c498a315d4b4d08bc7
+    m_Address: DOTweenSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae17a255e274fa746b70727948446777
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a240210a84086a84b9e77295b810e04e
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d624da284ba2e34aa896c2055ee31af
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0b398fac897ac045a74a751586a0ffe
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5ab7d06b1bd444429d12c422fbf34f9
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0817880274bd87d4da9db186c0e2eb83
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19e62bded3c0af94288521d2bebeb537
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0aecb1aa90363084196beb768140682e
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe42b0ec94cd4824cb50886d0b15adbc
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87cc5f6748c9d954780e7c370ccb5ca7
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2666ea97518436242bc34f992e5e66d2
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6da9e7faf1c11d94695c1c6b1fff2c5f
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 318e1138d13579745956cfcfb4ce05a5
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdb30989c5b07994d972180ae17006ad
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 635d85a30e40deb4bb07de43afcb2b2e
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c29ac5dd8b41784e8fdadad49ff3046
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3434f9a5616e70841ba5ebd56deaadb4
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e57fd60e374b011429388083e3a16dbf
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6873921a2f953a442a7069b6945a9701
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf11cb32231d1404cb23f996de5a0353
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81b131c6d717d024ab9918719ab26b3b
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 276aee168e47c5742a9a8d037638bf94
+    m_Address: StructureProfiles/Age1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f44a3c6706739ee4b80e95a915729f93
+    m_Address: TokenProfiles/EcomomicsSymbol/CommercialWorth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 884a83917f643d34e8fc750aee8faa22
+    m_Address: TokenProfiles/EcomomicsSymbol/DiscountClay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1897bf3eb8e28f748a3361c0e44855a6
+    m_Address: TokenProfiles/EcomomicsSymbol/DiscountPapyrus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fb70c9ec32ea444989b533c4bdc4a2c
+    m_Address: TokenProfiles/EcomomicsSymbol/DiscountStone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4835c3b19ff47314da29c4f3f61bf834
+    m_Address: TokenProfiles/EcomomicsSymbol/DiscountWood
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6da7a9d152132e489566ae9e4a52330
+    m_Address: TokenProfiles/EcomomicsSymbol/GlassDiscount
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1b14737609442a49b6d1f98e452041b
+    m_Address: TokenProfiles/EcomomicsSymbol/ManufacturedWorth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1504ecbcd76fca44e8cced13c2067973
+    m_Address: TokenProfiles/EcomomicsSymbol/MilitaryWorth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 054943a18e7871a499e00bcb38888d37
+    m_Address: TokenProfiles/EcomomicsSymbol/ProductionWorth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99cb582af0c375740a3e2e6793213ab3
+    m_Address: TokenProfiles/EcomomicsSymbol/Theology
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf46a15128251b149869ab9864b899b9
+    m_Address: TokenProfiles/EcomomicsSymbol/WonderWorth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be913563f98863746a5861cb539e91c0
+    m_Address: TokenProfiles/GuildSymbol/BuildersGuild
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e223e9e5b2ee684f8f735d60945ce20
+    m_Address: TokenProfiles/GuildSymbol/MagistratersGuild
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f2086387f9fc75419ceecb3f393fe2f
+    m_Address: TokenProfiles/GuildSymbol/MoneylendersGuide
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f3444781c8c01f45838bee32ee4a1a0
+    m_Address: TokenProfiles/GuildSymbol/ScientistsGuild
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0869b949bc8c6c44383c46c15bee7a96
+    m_Address: TokenProfiles/GuildSymbol/ShipowenersGuild
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef30d3349373f214dad7af2be8e56173
+    m_Address: TokenProfiles/GuildSymbol/TaticiansGuild
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d265164b723555441b6c4b800ed8b1f1
+    m_Address: TokenProfiles/GuildSymbol/TradersGuild
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c791265c6f830b24db5efd6d687ae6b2
+    m_Address: TokenProfiles/LinkingSymbol/ArcherySymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a08f94edc31b20479f0f01ca8f3d635
+    m_Address: TokenProfiles/LinkingSymbol/BooksSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 537b13dc738dc6043988118cd538ec37
+    m_Address: TokenProfiles/LinkingSymbol/BrewSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca863bc2c6d5ba0419d1d047579b3cef
+    m_Address: TokenProfiles/LinkingSymbol/CavalrySymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f8ce9de483e2c04ebeb055273e3a5dc
+    m_Address: TokenProfiles/LinkingSymbol/CeramicSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b2e6e8652ba12fe4ea00da44902c4e92
+    m_Address: TokenProfiles/LinkingSymbol/FountainSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54ae8b3d9d731814fa75107833ccf6f1
+    m_Address: TokenProfiles/LinkingSymbol/GearSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 458b315039b81bb47899229953af7db7
+    m_Address: TokenProfiles/LinkingSymbol/KnighSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da2b6c16ff249144da2f7aa352fffa15
+    m_Address: TokenProfiles/LinkingSymbol/MechanicalSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22abf431c0b5e3b4e98c410454742060
+    m_Address: TokenProfiles/LinkingSymbol/MetalSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8d4f8c390019d945816ccba72bb6c08
+    m_Address: TokenProfiles/LinkingSymbol/MoonSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57a9b6fad612c7b43809ca4a3d1a9ec1
+    m_Address: TokenProfiles/LinkingSymbol/PoliticSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c564fab6742515745b64f309c60e2481
+    m_Address: TokenProfiles/LinkingSymbol/Scriptorium
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a567591072a07c4e9d09daa252438bf
+    m_Address: TokenProfiles/LinkingSymbol/SunSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 018908b53da8e6d4f92f5be15446c76e
+    m_Address: TokenProfiles/LinkingSymbol/TheaterSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70ef71c08c5bc674e8eca4b0007b7654
+    m_Address: TokenProfiles/LinkingSymbol/WallSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40011d5a8d392284d9f85e40f58e45ac
+    m_Address: TokenProfiles/LinkingSymbol/WaterSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09f5392b48d45274e9cbb18763233e84
+    m_Address: TokenProfiles/MilitaryTokens/2Military
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b91548780f3b1640822a99b4dc0d3fe
+    m_Address: TokenProfiles/MilitaryTokens/5Militay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: caa2fb66c319c4742baaff410fb41558
+    m_Address: TokenProfiles/ProgressToken/Agriculture
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af780ac961d6ba048864c70732454db3
+    m_Address: TokenProfiles/ProgressToken/Architecture
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83adb66bc6b997448990466dbf1276f7
+    m_Address: TokenProfiles/ProgressToken/Economy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d0c6956abd3721d4b94db86066bdcd5b
+    m_Address: TokenProfiles/ProgressToken/Law
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f46d97aa041d75f4fbc749f529361970
+    m_Address: TokenProfiles/ProgressToken/Masonry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89e0c89c5d48c1b488f59e9f1e7d5afa
+    m_Address: TokenProfiles/ProgressToken/Mathematics
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b16ec2850d2fd16459436cf694ad6e15
+    m_Address: TokenProfiles/ProgressToken/Philosophy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ad69aaf448101148a303d05152676c2
+    m_Address: TokenProfiles/ProgressToken/Strategy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1239f0967514ec240a694050fc461409
+    m_Address: TokenProfiles/ProgressToken/Urbanism
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4648e374cc10be94cb2ed01277f439d2
+    m_Address: TokenProfiles/ScientificSymbols/ScienceAstronomers
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c901f785fcc75c478af065a9935c8b8
+    m_Address: TokenProfiles/ScientificSymbols/ScienceEducation
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 916c4ca1d9f1ee449b2cf77e4af43ea8
+    m_Address: TokenProfiles/ScientificSymbols/ScienceGeometry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b506843be2ea1e429d2508da099ba7c
+    m_Address: TokenProfiles/ScientificSymbols/ScienceMarket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2dc0dd44b6c560740bd807de9572f643
+    m_Address: TokenProfiles/ScientificSymbols/ScienceMath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2fe940b1955f5af4690b2b9ff39f1a9d
+    m_Address: TokenProfiles/ScientificSymbols/ScienceMedical
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d570c734e62a26c4781ade9576703abd
+    m_Address: TokenProfiles/ScientificSymbols/ScoolSymbol
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f96d4bdbd57e5ee4bac0663a810e9893
+    m_Address: TokenProfiles/1Gold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c383793fd2ad91046a64f3c0d1b6aaed
+    m_Address: TokenProfiles/3Gold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e921d78028c3dc24c8e22cb56da7171c
+    m_Address: TokenProfiles/6Gold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47ee8091caceb2345bf22dad69151e53
+    m_Address: TokenProfiles/Clay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9de2b204b1c6df64189e3696b42b7e85
+    m_Address: TokenProfiles/Conflict
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5284f60eb9d08b4982b294934e0c3a9
+    m_Address: TokenProfiles/Glass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac72acd1cd167d9488e5b69a86d93026
+    m_Address: TokenProfiles/Papyrus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45b2033b9a63da048a3111f0ccfb26b5
+    m_Address: TokenProfiles/Stone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5afcb573f0f60364a8642f85009bf107
+    m_Address: TokenProfiles/VictoryPoint
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08325a84492f94a4aaaeaa2fc9ae73a2
+    m_Address: TokenProfiles/Wood
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0297af8640ab0249a8bd6178b0d3f25
+    m_Address: Prefabs/Card
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: cbc632857f6312344aa45fa480f4922b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4de72911db4e13046a4af4f8366780db, type: 2}
+    - {fileID: 11400000, guid: 864e41e430fb0ab42ba9cf45af8487e6, type: 2}

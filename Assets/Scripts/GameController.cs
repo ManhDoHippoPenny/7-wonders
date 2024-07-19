@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace.Structures;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using Random = UnityEngine.Random;
 
 namespace DefaultNamespace
@@ -24,6 +28,7 @@ namespace DefaultNamespace
         
         private static GameController _instance;
 
+        [SerializeField] private StructureScript prefabCard;
         private PlayerProfile _player1;
         private PlayerProfile _player2;
         private bool _turnFirstPlayer = true;
@@ -40,10 +45,11 @@ namespace DefaultNamespace
         public string pathToStructureProfileAge1;
         public string pathToStructureProfileAge2;
         public string pathToStructureProfileAge3;
-        public StructureScript prefabCard;
+        public AssetReference PrefabCardReference;
 
         #endregion
         
+        #region Unity Methods
         public static GameController Instance
         {
             get
@@ -78,23 +84,41 @@ namespace DefaultNamespace
         {
             SetupGame();
         }
-
+        #endregion
         public void SetupGame()
         {
+            if (!PrefabCardReference.RuntimeKeyIsValid())
+            {
+                return;
+            }
+            AsyncOperationHandle<GameObject> handler = PrefabCardReference.LoadAssetAsync<GameObject>();
             _age2 = Resources.LoadAll<StructureProfile>(pathToStructureProfileAge2);
             _age3 = Resources.LoadAll<StructureProfile>(pathToStructureProfileAge3);
-
+            handler.Completed += handle =>
+            {
+                prefabCard = handle.Result.GetComponent<StructureScript>();
+            };
             _player1 = new PlayerProfile();
             _player2 = new PlayerProfile();
             
             LoadAge1();
+            
         }
 
         private void LoadAge1()
         {
-            _age1 = Resources.LoadAll<StructureProfile>(pathToStructureProfileAge1).ToList();
-            Debug.Log(_age1.Count);
-            LoadStructure(_age1,StructureAge1);
+            var result = Addressables.LoadAssetsAsync<StructureProfile>(pathToStructureProfileAge1, (profile =>
+            {
+                Debug.Log(profile._name);
+            }));
+            result.Completed += handle =>
+            {
+                Debug.Log(handle.Status);
+                LoadStructure(handle.Result.ToList(), StructureAge1);
+            };
+            //_age1 = Resources.LoadAll<StructureProfile>(pathToStructureProfileAge1).ToList();
+            //Debug.Log(_age1.Count);
+            //LoadStructure(_age1,StructureAge1);
         }
 
         private void LoadStructure(List<StructureProfile> list, int[,] structure)
@@ -182,5 +206,14 @@ namespace DefaultNamespace
         {
             _turnFirstPlayer = !_turnFirstPlayer;
         }
+        
+        #region Addressable
+
+        [SerializeField] private string m_Address;
+        private ResourceRequest m_hatLoadingRequest;
+        private AsyncOperationHandle<GameObject> m_hatLoadOpHandle;
+
+
+        #endregion
     }
 }
